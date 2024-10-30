@@ -1,0 +1,113 @@
+/* Importar fuentes y librerías */
+@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+
+@media only screen and (max-width: 600px) {
+  /* Estilos para pantallas con un ancho máximo de 600px */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos para pantallas con un ancho mínimo de 601px y un ancho máximo de 1024px */
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Estilos para pantallas con un ancho mínimo de 1025px */
+}
+
+@media only screen and (max-width: 600px) {
+  /* Estilos para dispositivos móviles */
+}
+
+/* Importar fuentes y librerías */
+@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+
+/* Estilos generales */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("imagenes/fondo.png") no-repeat center center fixed; 
+  background-size: cover;
+  font-family: "Ubuntu", helvetica, sans-serif;
+}
+
+.contenedor-formularios {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #ffffff77;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contenedor-tabs {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.contenedor-tabs li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contenido-tab {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contenedor-input {
+  margin-bottom: 15px;
+}
+
+.contenedor-input label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contenedor-input input {
+  width: calc(100% - 10px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc00;
+  border-radius: 5px;
+}
+
+.button {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #7a0808;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #e91818;
+}
+
+/* Estilos específicos para el formulario de inicio de sesión */
+form {
+  text-align: left;
+}
+
+form img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Media queries para responsive design */
+@media (max-width: 600px) {
+  .contenedor-formularios {
+    margin: 20px;
+    padding: 15px;
+  }
+}

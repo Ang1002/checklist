@@ -1,0 +1,312 @@
+@media only screen and (max-width: 600px) {
+  /* Estilos para dispositivos móviles */
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    font-size: 14px;
+    /* Tamaño de fuente más pequeño para dispositivos móviles */
+    /* Otros estilos de la tabla para dispositivos móviles */
+  }
+}
+
+
+body {
+  background-color: white;
+}
+
+.blue-button {
+  background-color: #007bff !important;
+}
+
+
+/*menu*/
+
+nav {
+  background-color: rgba(155, 3, 3, 1.0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px; /* Ajusta este valor para reducir la altura */
+  padding-left: 1%;
+  padding-right: 1%;
+  font-weight: bold;
+  width: auto;
+}
+
+ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000000;
+}
+
+.main-nav__item {
+  display: inline-block;
+  padding: 15px;
+}
+
+.main-nav__link {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.main-nav__link span {
+  color: #000000;
+  display: block;
+}
+
+.main-nav__link:hover span {
+  transform: translateY(-100%);
+  transition: 1s;
+}
+
+.main-nav__link::before {
+  position: absolute;
+  content: attr(data-link-alt);
+  top: 100%;
+  opacity: 0;
+  transition: 1s;
+  color: #fcfcfc;
+  font-weight: bolder;
+}
+
+.main-nav__link:hover::before {
+  top: 0;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+
+/*Fin de menu*/
+
+
+/********estilos de check list **********/
+
+/* Estilos para la tabla */
+table {
+  border-collapse: collapse;
+  width: auto;
+}
+
+thead {
+  background-color: #333;
+  /* Cambiar el color de fondo */
+  color: white;
+  /* Cambiar el color del texto a blanco */
+}
+
+/* Estilo para las celdas del encabezado */
+th {
+  padding: 8px;
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Filas alternas de la tabla */
+tr:nth-child(even) {
+  background-color: #dcd6d6;
+  color: black;
+}
+
+/* Texto en negrita para la primera fila (cabecera) */
+th {
+  font-weight: bold;
+}
+
+/* Estilos para los checkboxes */
+.checklist {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.checklist:checked+label:after {
+  opacity: 1;
+}
+
+.checklist+label {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #828282;
+}
+
+.checklist+label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+
+/*****************/
+
+
+
+/**** css para boton ***/
+.button {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 15px;
+  /* Ajuste del padding para reducir el tamaño del botón */
+  font-size: 1rem;
+  /* Reducción del tamaño de la fuente */
+  background: #4b4949;
+  color: #ffffff;
+  transition: all .5s ease;
+  border-radius: 60px;
+}
+
+.button:hover,
+.button:focus {
+  color: rgba(255, 255, 255, .5);
+}
+
+.button-block {
+  display: block;
+  width: 20%;
+}
+
+/****estilos del titulo area ******/
+
+
+#header {
+  text-align: center;
+}
+
+@keyframes textclip {
+  0% {
+    color: transparent;
+  }
+
+  50% {
+    color: #401717;
+    /* Color deseado durante la transición */
+  }
+
+  100% {
+    color: transparent;
+  }
+}
+
+.animate-charcter {
+  text-align: center;
+  font-weight: 300;
+  background-image: linear-gradient(-225deg, #ff0505 0%, #ff0000 29%, #b8b6b6 67%, #ff0000 100%);
+  background-size: auto auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 90px;
+  margin: 0 auto;
+}
+
+
+
+/************fin de estilo **************************/
+
+/*///diseño del footer ////*/
+
+/* Reset de margen y padding */
+body,
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo del pie de página */
+footer {
+  background-color: #830606;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #fffbfb;
+  width: uto;
+}
+
+
+/* Estilos para el botón */
+#openModalButton {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para la ventana emergente */
+.modal {
+  display: none;
+  /* La ventana emergente está oculta por defecto */
+  position: fixed;
+  /* Permanece fija en la pantalla */
+  z-index: 1;
+  /* Encima de todo el contenido */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Permite desplazamiento si el contenido es demasiado grande */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Fondo oscuro semi-transparente */
+}
+
+/* Estilos para el contenido de la ventana emergente */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* Centra la ventana emergente verticalmente */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Ancho de la ventana emergente */
+}
+
+/* Estilos para el botón de cierre */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*widgets de hora y fecha*/

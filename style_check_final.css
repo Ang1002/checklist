@@ -1,0 +1,514 @@
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Hacer que el modal esté encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilitar el desplazamiento si el contenido es demasiado largo */
+    background-color: rgba(0,0,0,0.4); /* Fondo negro semitransparente */
+    transition: opacity 0.5s ease;
+    opacity: 0;/* Fondo negro semitransparente */
+    padding-top: 60px; /* Espaciado superior para la barra de navegación */
+}
+
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centrar el modal verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Anchura del modal */
+    border-radius: 10px;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+
+
+/* Estilos para el botón de cerrar el modal */
+.close {
+    color: #000000;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.custom-modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    position: relative;
+}
+
+.custom-close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.custom-file-upload {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.custom-file-upload i {
+    margin-right: 5px;
+}
+
+
+button {
+    background-color: #990505;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width:auto;
+}
+
+button:hover {
+    background-color: #990505;
+}
+
+button:active {
+    background-color: #990505;
+}
+
+
+.img-container {
+  display: inline-block; /* Mostrar en línea uno al lado del otro */
+  vertical-align: top; /* Alineación superior */
+  width: 10%; /* Ancho deseado para cada contenedor */
+  height: 50px; /* Altura deseada */
+  background-color: white; /* Color de fondo */
+  border: 1px solid white; /* Borde */
+  margin: 0; /* Margen horizontal para separar los bloques */
+  box-sizing: border-box; /* Incluir el borde en el tamaño total del elemento */
+}
+
+input[type="date"]{
+    background-color: #8c180f;
+    transform: translate(-50%,-50%);
+    font-family: "Roboto Mono",monospace;
+    color:#c2bcbc ;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.calendar {
+  
+      float: left;
+      width: 70px;
+      background: #ededef;
+      background:#ededef;
+      font: bold 20px/45px Arial Black, Arial, Helvetica, sans-serif;
+      text-align: center;
+      color: #000;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      position: relative;
+    }
+
+    .calendar em {
+      display: block;
+      font: normal bold 11px/30px Arial, Helvetica, sans-serif;
+      color: #fff;
+      text-shadow: #8c180f 0 -1px 0;
+      background:#8c180f;
+    }
+
+    .calendar:before,
+    .calendar:after {
+      content: '';
+      float: left;
+      position: absolute;
+      top: 5px;
+      width: 8px;
+      height: 8px;
+      background: #111;
+      z-index: 1;
+     
+      border-radius: 10px;
+    
+    }
+
+    .calendar em:before,
+    .calendar em:after {
+      content: '';
+      float: left;
+      position: absolute;
+      top: -5px;
+      width: 4px;
+      height: 14px;
+      background: #dadada;
+      background: #f1f1f1;
+      z-index: 2;
+      border-radius: 2px;
+    }
+
+    .calendar em:before {
+      left: 13px;
+    }
+
+    .calendar em:after {
+      right: 13px;
+    }
+
+    .calendar:before {
+      left: 11px;
+    }
+
+    .calendar:after {
+      right: 11px;
+    }
+    
+    .identificador-elemento {
+    display: none;
+}
+
+.popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .popup-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color:#000000;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Estilos para el formulario dentro del cuadro emergente */
+        .popup-content form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .popup-content form label {
+            margin-bottom: 8px;
+        }
+
+        .popup-content form select,
+        .popup-content form button {
+            margin-top: 8px;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        .popup-content form button {
+            background-color: #690c0d;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .popup-content form button:hover {
+            background-color:#690c0d;
+        }
+
+        /* Estilos para la vista previa de la imagen */
+        #preview {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .modal-header {
+    width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
+    height:140px; /* Ajusta la altura de la imagen según sea necesario */
+    margin-bottom: 20px; /* Espacio entre la imagen y el contenido del modal */
+}
+
+
+
+/* Estilo para los modales */
+.modalre {
+    display: none; /* Por defecto, los modales están ocultos */
+    position: fixed; /* Permanece en la misma posición incluso si se desplaza la página */
+    z-index: 1; /* Ubica el modal por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Añade desplazamiento si el contenido es demasiado grande para el modal */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semi-transparente */
+}
+
+/* Contenido del modal */
+.modalre-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centra el modal verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Botón de cierre (x) */
+.close-btn {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.modal-header {
+    width: 10%;
+    height: 20px; /* Ajusta la altura según sea necesario */
+    background-color: #690c0d; /* Color de fondo del recuadro */
+    border-radius: 10px; /* Borde redondeado del recuadro */
+    margin-bottom: 20px; /* Espacio entre el recuadro y el contenido del modal */
+}
+
+        #successMessage {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        #successMessage.success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        #successMessage.error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+
+        #boton1 {
+            background-color:#6e0b0b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            padding: 10px 22px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        #boton2 {
+            background-color: #6e0b0b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        
+        
+        }
+
+
+     /* Contenedor de notificaciones */
+     .notification-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            max-width: 300px;
+        }
+
+        /* Estilos para las notificaciones */
+        .notification {
+            position: relative;
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .notification.show {
+            opacity: 1;
+        }
+
+        .notification .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            cursor: pointer;
+            color: #aaaaaa;
+        }
+
+        .notification.info {
+            border-left: 5px solid #007bff; /* azul */
+        }
+
+        .notification.error {
+            border-left: 5px solid #dc3545; /* rojo */
+        }
+
+        /* Estilos para el botón de notificaciones */
+        #notification-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #007bff; /* azul */
+            color: #ffffff;
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #notification-btn:hover {
+            background-color: #0056b3; /* azul más oscuro */
+        } 
+    .inline-forms {
+        display: inline-block;
+    }
+    
+    .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .image-container .img-wrapper {
+            position: relative;
+            width: 150px; /* Ajusta el tamaño de la imagen */
+            height: 150px; /* Ajusta el tamaño de la imagen */
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin deformarse */
+        }
+        .remove-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 16px;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .file-count-container {
+            margin-top: 10px;
+        }
+        .hidden-input {
+            display: none;
+        }
+        

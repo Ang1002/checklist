@@ -1,0 +1,46 @@
+/* Estilos generales */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.charts-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.chart-container {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.chart-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+#chart-tablas {
+    margin: 0 auto;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1E90FF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #1565c0;
+}

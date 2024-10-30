@@ -1,0 +1,130 @@
+@media only screen and (max-width: 600px) {
+  /* Estilos para dispositivos móviles */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ecebeb;
+  margin: 0;
+  padding: 0;
+  width: auto ;
+}
+
+form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+select,
+input[type="radio"],
+input[type="checkbox"] {
+  
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.textarea-custom {
+    width: 600px;
+    height: 250px;
+}
+
+input[type="text"] {
+  height: 150px;
+}
+
+input[type="submit"] {
+  background-color: #780808;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #8d1919;
+}
+
+/**** css para boton ***/
+
+.button {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 0;
+  font-size: 2rem;
+  background: #960303;
+  color: #ffffff;
+  transition: all .5s ease;
+  border-radius: 90px;
+}
+
+.button:hover,
+.button:focus {
+  color: rgba(255, 255, 255, .5);
+}
+
+.button-block {
+  display: block;
+  width: 20%;
+}
+
+/*///diseño del footer ////*/
+
+/* Reset de margen y padding */
+body,
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo del pie de página */
+footer {
+  background-color: #830606;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #fffbfb;
+  width: 100%;
+}
+
+    /* Estilos para los checkboxes */
+    .checkbox-container {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .checkbox-label {
+        margin-left: 5px;
+    }
+
+    /* Estilos para la lista desplegable */
+    .select-container select {
+        width: 300px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        font-size: 16px;
+    }
+

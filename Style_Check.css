@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css?family=Google+Sans');
+@media only screen and (max-width: 600px) {
+    /* Estilos para dispositivos móviles */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    
+  }
+
+  
+  /* Estilos para el modal */
+  .modal {
+      display: none; /* Ocultar el modal por defecto */
+      position: fixed; /* Posición fija */
+      z-index: 1; /* Hacer que el modal esté encima de todo */
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto; /* Habilitar el desplazamiento si el contenido es demasiado largo */
+      background-color: rgb(0,0,0); /* Fondo negro semitransparente */
+      background-color: rgba(0,0,0,0.4); /* Fondo negro semitransparente */
+      padding-top: 60px; /* Espaciado superior para la barra de navegación */
+  }
+  
+  /* Estilos para el contenido del modal */
+  .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto; /* Centrar el modal verticalmente */
+      padding: 15px;
+      border: 1px solid #888;
+      width: 60%; /* Anchura del modal */
+  }
+  
+  /* Estilos para el botón de cerrar el modal */
+  .close {
+      color: #000000;
+      float: right;
+      font-size: 32px;
+      font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .custom-modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+      padding-top: 60px;
+  }
+  
+  .custom-modal-content {
+      background-color: #fefefe;
+      margin: 5% auto;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      position: relative;
+  }
+  
+  .custom-close {
+      color: #aaa;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      cursor: pointer;
+  }
+  
+  .modal-title {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  
+  .custom-file-upload {
+      background-color: #f0f0f0;
+      color: #333;
+      border: 1px solid #ccc;
+      display: inline-block;
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 10px;
+  }
+  
+  .custom-file-upload i {
+      margin-right: 5px;
+  }
+  
+  
+  button {
+      background-color: #990505;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width:auto;
+  }
+  
+  button:hover {
+      background-color: #990505;
+  }
+  
+  button:active {
+      background-color: #990505;
+  }
+  
+  
+  .img-container {
+    display: inline-block; /* Mostrar en línea uno al lado del otro */
+    vertical-align: top; /* Alineación superior */
+    width: 10%; /* Ancho deseado para cada contenedor */
+    height: 50px; /* Altura deseada */
+    background-color: white; /* Color de fondo */
+    border: 1px solid white; /* Borde */
+    margin: 0; /* Margen horizontal para separar los bloques */
+    box-sizing: border-box; /* Incluir el borde en el tamaño total del elemento */
+  }
+  
+  input[type="date"]{
+      background-color: #8c180f;
+      transform: translate(-50%,-50%);
+      font-family: "Roboto Mono",monospace;
+      color:#c2bcbc ;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+  }
+  ::-webkit-calendar-picker-indicator{
+      background-color: #ffffff;
+      padding: 5px;
+      cursor: pointer;
+      border-radius: 3px;
+  }
+  
+  
+ 
+  /*menu*/
+
+  nav {
+    background-color: rgba(155, 3, 3, 1.0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-weight: bold;
+    width: auto;
+    left: 18%;
+    
+  
+  
+  }
+  
+  
+  
+  ul li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #000000;
+  }
+  
+  .main-nav__item {
+    display: inline-block;
+    padding: 15px;
+  }
+  
+  .main-nav__link {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .main-nav__link span {
+    color: #000000;
+    display: block;
+  }
+  
+  .main-nav__link:hover span {
+    transform: translateY(-100%);
+    transition: 1s;
+  }
+  
+  .main-nav__link::before {
+    position: absolute;
+    content: attr(data-link-alt);
+    top: 100%;
+    opacity: 0;
+    transition: 1s;
+    color: #fcfcfc;
+    font-weight: bolder;
+  }
+  
+  .main-nav__link:hover::before {
+    top: 0;
+    opacity: 1;
+    text-decoration: underline;
+  }
+  
+  /*Fin de menu*/
+  
+  
+  /********estilos de check list **********/
+  
+  /* Estilos para la tabla */
+ /* Estilos para la tabla */
+table {
+  border-collapse: collapse;
+  width: 100%; /* Cambiado a 100% para que ocupe todo el ancho disponible */
+  max-width: 100%; /* Limita el ancho máximo de la tabla */
+  overflow-x: auto; /* Permite el desplazamiento horizontal en dispositivos más pequeños */
+  display: block; /* Para que el contenedor sea responsivo */
+}
+
+thead {
+  background-color: #333;
+  font-size: 18px;
+  color: white;
+}
+
+th {
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+}
+
+tr:nth-child(even) {
+  background-color: #dcd6d6;
+  color: black;
+}
+
+th {
+  font-weight: bold;
+}
+
+/* Media queries para hacer la tabla más responsiva */
+@media only screen and (max-width: 768px) {
+  th, td {
+      font-size: 10px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
+      padding: 5px; /* Reduce el padding para un mejor ajuste */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  th, td {
+      font-size: 8px; /* Reduce aún más el tamaño de fuente en pantallas muy pequeñas */
+      padding: 4px; /* Reduce el padding para un mejor ajuste */
+  }
+}
+
+
+
+/*diseño para mi select */
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  width: 25%;
+  margin-bottom: auto;
+}
+input[type="submit"] {
+  background-color: #9c0a0a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #9c0a0a;
+}
+
+
+  /* Estilos para los checkboxes */
+  .checklist {
+    width: 220px;
+    height: 20px;
+    cursor: pointer;
+    margin: auto;
+  }
+  
+  .checklist:checked+label:after {
+    opacity: 1;
+  }
+  
+  .checklist+label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #828282;
+  }
+  
+  .checklist+label:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+
+  /*****************/
+  
+  
+  
+  /**** css para boton ***/
+  .button {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 15px;
+    /* Ajuste del padding para reducir el tamaño del botón */
+    font-size: 1rem;
+    /* Reducción del tamaño de la fuente */
+    background: #4b4949;
+    color: #ffffff;
+    transition: all .5s ease;
+    border-radius: 60px;
+  }
+  
+  .button:hover,
+  .button:focus {
+    color: rgba(255, 255, 255, .5);
+  }
+  
+  .button-block {
+    display: block;
+    width: 20%;
+  }
+  
+  /****estilos del titulo area ******/
+  
+  
+  #header {
+    text-align: center;
+  }
+  
+  @keyframes textclip {
+    0% {
+      color: transparent;
+    }
+  
+    50% {
+      color: #401717;
+      /* Color deseado durante la transición */
+    }
+  
+    100% {
+      color: transparent;
+    }
+  }
+  
+  .animate-charcter {
+    text-align: center;
+    font-weight: 300;
+    background-image: linear-gradient(-225deg, #ff0505 0%, #ff0000 29%, #b8b6b6 67%, #ff0000 100%);
+    background-size: auto auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+    font-size: 90px;
+    margin: 0 auto;
+  }
+  
+  
+  
+  /************fin de estilo **************************/
+  
+  /*///diseño del footer ////*/
+  
+  /* Reset de margen y padding */
+ 
+  
+  /* Estilo del pie de página */
+  footer {
+    background-color: #830606;
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #fffbfb;
+    width: auto;
+    position: relative;
+    bottom: 0; /* Pegar el footer al borde inferior */
+  }
+   /* Estilo del pie de página */
+  
+
+/**Estilo de checks**/
+h1 {
+  font-weight: lighter;
+}
+
+small {
+  color: firebrick;
+}
+
+div.checkbox_select {
+  width: 200px;
+}
+
+.checkbox_select_anchor {
+  display: block;
+  background: firebrick;
+  color: white;
+  cursor: pointer;
+  padding: 10px 5px 5px;
+  position: relative;
+}
+
+.checkbox_select_anchor:after {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid darkred;
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.expanded .checkbox_select_anchor:after {
+  border-top: 0;
+  border-bottom: 10px solid firebrick;
+}
+
+
+.checkbox_select_anchor:hover {
+  background: #FF3030 !important;
+}
+
+.expanded .checkbox_select_anchor {
+  background: #7C1818;
+}
+
+div.checkbox_select .select_input {
+  width: 100%;
+  cursor: pointer;
+}
+
+.checkbox_select_dropdown {
+  display: none;
+  background: whitesmoke;
+}
+
+.checkbox_select_dropdown.show {
+  display: block;
+}
+
+.checkbox_select_dropdown ul {
+  max-height: 150px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #999;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.checkbox_select_dropdown ul li {
+  list-style: none;
+  position: relative;
+  color: #666;
+}
+
+.checkbox_select_dropdown ul li label {
+  position: relative;
+  padding: 10px 5px 5px 40px;
+  display: block;
+  cursor: pointer;
+}
+
+.checkbox_select_dropdown ul li label:hover {
+  background: #cbcbcb;
+  color: white;
+}
+
+.checkbox_select_dropdown ul li input:checked+label {
+  background: #bbb;
+  color: white;
+  text-shadow: 0px 1px 1px rgba(150, 150, 150, 1);
+}
+
+.checkbox_select_dropdown ul li input {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  display: inline-block;
+  height: 100%;
+  width: 30px;
+}
+
+.checkbox_select_search {
+  width: 200px;
+  padding: 10px 5px 5px;
+  border: 1px solid #999;
+  border-top: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.checkbox_select_submit {
+  background: #00A600;
+  color: white;
+  padding: 10px 5px 5px;
+  border: 0;
+  width: 100%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+/* Estilos para el modal */
+.modal {
+  display: none; /* Ocultar el modal por defecto */
+  position: fixed; /* Posición fija */
+  z-index: 1; /* Hacer que el modal esté encima de todo */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Habilitar el desplazamiento si el contenido es demasiado largo */
+  background-color: rgb(0,0,0); /* Fondo negro semitransparente */
+  background-color: rgba(0,0,0,0.4); /* Fondo negro semitransparente */
+  padding-top: 60px; /* Espaciado superior para la barra de navegación */
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* Centrar el modal verticalmente */
+  padding: 15px;
+  border: 1px solid #888;
+  width: 60%; /* Anchura del modal */
+}
+
+/* Estilos para el botón de cerrar el modal */
+.close {
+  color: #000000;
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.custom-modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  position: relative;
+}
+
+.custom-close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.custom-file-upload {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.custom-file-upload i {
+  margin-right: 5px;
+}
+
+
+button {
+  background-color: #990505;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width:auto;
+}
+
+button:hover {
+  background-color: #990505;
+}
+
+button:active {
+  background-color: #990505;
+}
+
+
+.img-container {
+display: inline-block; /* Mostrar en línea uno al lado del otro */
+vertical-align: top; /* Alineación superior */
+width: 10%; /* Ancho deseado para cada contenedor */
+height: 50px; /* Altura deseada */
+background-color: white; /* Color de fondo */
+border: 1px solid white; /* Borde */
+margin: 0; /* Margen horizontal para separar los bloques */
+box-sizing: border-box; /* Incluir el borde en el tamaño total del elemento */
+}
+
+input[type="date"]{
+  background-color: #8c180f;
+  transform: translate(-50%,-50%);
+  font-family: "Roboto Mono",monospace;
+  color:#c2bcbc ;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+  background-color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+.calendar {
+
+    float: left;
+    width: 70px;
+    background: #ededef;
+    background:#ededef;
+    font: bold 20px/45px Arial Black, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #000;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .calendar em {
+    display: block;
+    font: normal bold 11px/30px Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: #8c180f 0 -1px 0;
+    background:#8c180f;
+  }
+
+  .calendar:before,
+  .calendar:after {
+    content: '';
+    float: left;
+    position: absolute;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    background: #111;
+    z-index: 1;
+   
+    border-radius: 10px;
+  
+  }
+
+  .calendar em:before,
+  .calendar em:after {
+    content: '';
+    float: left;
+    position: absolute;
+    top: -5px;
+    width: 4px;
+    height: 14px;
+    background: #dadada;
+    background: #f1f1f1;
+    z-index: 2;
+    border-radius: 2px;
+  }
+
+  .calendar em:before {
+    left: 13px;
+  }
+
+  .calendar em:after {
+    right: 13px;
+  }
+
+  .calendar:before {
+    left: 11px;
+  }
+
+  .calendar:after {
+    right: 11px;
+  }
